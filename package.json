@@ -1,0 +1,11 @@
+{
+  "name": "toothub",
+  "version": "0.0.1",
+  "description": "A hub for toots",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Les Orchard <me@lmorchard.com>",
+  "license": "ISC"
+}
