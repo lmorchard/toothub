@@ -16,7 +16,14 @@ around the world. In fact, people can toot at each other, and the hub will
 pass the toots around. People can also toot at funny words, and everyone can
 see all the toots gathered around that word.
 
-The toot hub is a wonderful place to discover toots.
+The toot hub is a wonderful place to discover toots. 
+
+But, what's even more wonderful is that people discovered they could conjure
+up hubs of their own - for friends, colleagues, or even just themselves. 
+
+These new hubs could be open to all, or keep a bouncer at the door checking
+for invitations. Some hubs could be private, quietly watching the out loud
+toots of other people for shy owners.
 
 ## TODO
 
