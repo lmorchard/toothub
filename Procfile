@@ -1,1 +1,1 @@
-web: ./bin/toothub server
+web: node bin/toothub server

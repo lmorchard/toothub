@@ -1,5 +1,5 @@
 {
-  "name": "toot-hub",
+  "name": "toothub",
   "description": "A hub for many tooters",
   "repository": "https://github.com/lmorchard/toothub",
   "keywords": ["node", "express", "static", "toots"],
