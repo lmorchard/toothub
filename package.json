@@ -24,7 +24,9 @@
     "winston": "~0.8.1",
     "express": "~4.9.8",
     "stylus": "~0.49.2",
-    "express-winston": "~0.2.8"
+    "express-winston": "~0.2.8",
+    "browserify-express": "~0.1.4",
+    "browserify-middleware": "~4.1.0"
   },
   "devDependencies": {
     "chai": "~1.9.2",
