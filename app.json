@@ -4,7 +4,6 @@
   "repository": "https://github.com/lmorchard/toothub",
   "keywords": ["node", "express", "static", "toots"],
   "env": {
-    "PORT": 3000,
     "DEBUG": false
   }
 }
