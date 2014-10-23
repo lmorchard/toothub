@@ -1,4 +1,4 @@
-# TootHub
+# toothub
 
 A hub for many tooters
 
@@ -26,6 +26,26 @@ up hubs of their own - for friends, colleagues, or even just themselves.
 These new hubs could be open to all, or keep a bouncer at the door checking
 for invitations. Some hubs could be private, quietly watching the out loud
 toots of other people for shy owners.
+
+## What?
+
+* Toot = Tiny outburst of text
+
+* You need a [tootr](https://github.com/lmorchard/tootr) to toot your own
+  horn.
+
+## No seriously what?
+
+This is an experiment in semi-distributed microblogging using mostly boring
+old formats and microformats on the web. In other words, it's like a Twitter
+that's not all in one place.
+
+It should be easy to publish little thoughts in a space that's yours. It
+should be not much harder to set up a place where lots of people's thoughts
+come together. There should be more than one place where thoughts come
+together - some public and inclusive, some private and exclusive. We shouldn't
+all be cooped up in one party dorm where one landlord has control over
+everything.
 
 ## TODO
 
