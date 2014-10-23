@@ -26,7 +26,9 @@
     "stylus": "~0.49.2",
     "express-winston": "~0.2.8",
     "browserify-express": "~0.1.4",
-    "browserify-middleware": "~4.1.0"
+    "browserify-middleware": "~4.1.0",
+    "mongodb": "~1.4.19",
+    "minimongo": "~2.7.0"
   },
   "devDependencies": {
     "chai": "~1.9.2",
