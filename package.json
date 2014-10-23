@@ -4,8 +4,25 @@
   "description": "A hub for toots",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "author": "Les Orchard <me@lmorchard.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "~2.4.0",
+    "require-dir": "~0.1.0",
+    "wilson": "0.0.5",
+    "async": "~0.9.0",
+    "lodash": "~2.4.1",
+    "winston": "~0.8.1",
+    "express": "~4.9.8",
+    "stylus": "~0.49.2",
+    "express-winston": "~0.2.8"
+  },
+  "devDependencies": {
+    "chai": "~1.9.2",
+    "mocha": "~2.0.0",
+    "jshint": "~2.5.6",
+    "supervisor": "~0.6.0"
+  }
 }

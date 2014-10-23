@@ -2,6 +2,8 @@
 
 A hub for many tooters
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 ## The Idea
 
 Picture a world of tooters, just tooting out loud to themselves. They have no

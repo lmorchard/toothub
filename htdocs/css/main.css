@@ -1,0 +1,13 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #fefefe;
+  color: #010101;
+  font: 15px/1.85em sans-serif;
+}

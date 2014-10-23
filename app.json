@@ -1,0 +1,10 @@
+{
+  "name": "toot-hub",
+  "description": "A hub for many tooters",
+  "repository": "https://github.com/lmorchard/toothub",
+  "keywords": ["node", "express", "static", "toots"],
+  "env": {
+    "PORT": 3000,
+    "DEBUG": false
+  }
+}
