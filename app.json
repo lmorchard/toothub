@@ -4,6 +4,5 @@
   "repository": "https://github.com/lmorchard/toothub",
   "keywords": ["node", "express", "static", "toots"],
   "env": {
-    "DEBUG": false
   }
 }
