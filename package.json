@@ -10,7 +10,11 @@
     "test": "./node_modules/.bin/mocha"
   },
   "author": "Les Orchard <me@lmorchard.com>",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lmorchard/toothub"
+  },
+  "license": "MIT",
   "dependencies": {
     "commander": "~2.4.0",
     "require-dir": "~0.1.0",
