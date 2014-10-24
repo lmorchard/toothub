@@ -31,7 +31,11 @@
     "browserify-express": "~0.1.4",
     "browserify-middleware": "~4.1.0",
     "mongodb": "~1.4.19",
-    "minimongo": "~2.7.0"
+    "minimongo": "~2.7.0",
+    "feedparser": "~0.19.2",
+    "cheerio": "~0.17.0",
+    "request": "~2.46.0",
+    "microformat-node": "~0.2.14"
   },
   "devDependencies": {
     "chai": "~1.9.2",
