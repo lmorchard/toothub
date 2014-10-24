@@ -47,8 +47,63 @@ together - some public and inclusive, some private and exclusive. We shouldn't
 all be cooped up in one silo where a single landlord has control over
 everything.
 
+## Principles
+
+* Make this thing simple to initially deploy, possible to upgrade later
+
 ## TODO
 
-* app.json for heroku
+* HTTP API
+
+  * registering a toot stream
+
+  * pings for when a toot stream changes
+
+    * rssCloud / PuSH compatible or inspired 
+
+* Poll toot streams, periodically and on ping
+
+* Aggregate the toots
+
+* Index #hashtags and @replies
+
+  * Optional webhook to receive real-time-ish @replies
+
+* Use an in-memory 'database' at first - cheap, but dies with reboots
+
+  * Should probably be fine for dozens to hundreds of users?
+
+  * Optional state snapshots saved to S3 or Dropbox, loaded on startup
+
+* Optional upgrade to a MongoDB instance - eg. [mongolab](https://mongolab.com/)
+
+* Optional publishing of public viewable pages to S3
+
+  * Only use the app for registration and aggregation
+
+  * All feed views get statically published
+
+* Optionally provide websocket firehoses?
+
+  * @replies, #hashtags, etc
+
+* Reply semantics?
+
+* Auth / privacy
+
+  * Invite-only mode
+
+  * Identity / role restricted aggregation views
+
+  * Someday, play with GPG for encrypted toots for private groups and direct
+    messages
+
+* Inter-hub shenanigans
+
+  * Let hubs advertise to each other?
+
+  * Collect #hashtag toots from many hubs
+
+  * More?
 
 <!-- vim: set wrap wm=5 syntax=mkd textwidth=78: -->
