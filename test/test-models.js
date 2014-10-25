@@ -1,14 +1,12 @@
-var testUtils = require('../lib/test-utils');
 var util = require('util');
 var _ = require('lodash');
 var async = require('async');
 var expect = require('chai').expect;
 var models = require(__dirname + '/../lib/models');
 
-var feeds_json = require(__dirname + '/fixtures/feeds.json');
+var testUtils = require('../lib/test-utils');
 
-beforeEach(testUtils.sharedBefore);
-afterEach(testUtils.sharedAfter);
+var feeds_json = require(__dirname + '/fixtures/feeds.json');
 
 describe('models', function () {
 
