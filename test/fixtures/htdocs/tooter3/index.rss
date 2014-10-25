@@ -4,6 +4,7 @@
     <title>Tooter 3</title>
     <description>This is the feed of Tooter 3</description>
     <link>http://127.0.0.1:5050/tooter3/index.html</link>
+    <author>tooter3@example.com</author>
 
     <item>
       <title>Tooter 3 Test Toot 1</title>
