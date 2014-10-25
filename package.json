@@ -30,8 +30,6 @@
     "express-winston": "~0.2.8",
     "browserify-express": "~0.1.4",
     "browserify-middleware": "~4.1.0",
-    "mongodb": "~1.4.19",
-    "minimongo": "~2.7.0",
     "feedparser": "~0.19.2",
     "cheerio": "~0.17.0",
     "request": "~2.46.0",

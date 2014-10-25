@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Tooter 3</title>
+    <description>This is the feed of Tooter 3</description>
+    <link>http://127.0.0.1:5050/tooter3/index.html</link>
+
+    <item>
+      <title>Tooter 3 Test Toot 1</title>
+      <description>This Tooter 3 is summary #1</description>
+      <pubDate>Fri, 24 Oct 2014 01:30:00 GMT</pubDate>
+      <link>http://example.com/tooter3/1</link>
+      <guid isPermaLink="true">http://example.com/tooter3/1</guid>
+    </item>
+
+    <item>
+      <title>Tooter 3 Test Toot 2</title>
+      <description>This Tooter 3 is summary #2</description>
+      <pubDate>Fri, 24 Oct 2014 02:01:00 GMT</pubDate>
+      <link>http://example.com/tooter3/2</link>
+      <guid isPermaLink="true">http://example.com/tooter3/2</guid>
+    </item>
+
+    <item>
+      <title>Tooter 3 Test Toot 3</title>
+      <description>This Tooter 3 is summary #3</description>
+      <pubDate>Fri, 24 Oct 2014 02:32:00 GMT</pubDate>
+      <link>http://example.com/tooter3/3</link>
+      <guid isPermaLink="true">http://example.com/tooter3/3</guid>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Tooter 2</title>
+  <link href="http://127.0.0.1:5050/tooter2/"/>
+  <id>http://127.0.0.1:5050/tooter2/</id>
+  <updated>2014-10-24T12:00:00Z</updated>
+  <author>
+    <name>Tooter 2</name>
+  </author>
+
+  <entry>
+    <id>http://example.com/tooter2/1</id>
+    <link type="text/html" rel="alternate" href="http://example.com/tooter2/1"/>
+    <published>2014-10-24T01:20:00Z</published>
+    <title>Tooter 2 Test Toot 1</title>
+    <content type="html">This is Tootr 2 summary #1</content>
+  </entry>
+
+  <entry>
+    <id>http://example.com/tooter2/2</id>
+    <link type="text/html" rel="alternate" href="http://example.com/tooter2/2"/>
+    <published>2014-10-24T01:50:00Z</published>
+    <title>Tooter 2 Test Toot 2</title>
+    <content type="html">This is Tootr 2 summary #2</content>
+  </entry>
+
+  <entry>
+    <id>http://example.com/tooter2/3</id>
+    <link type="text/html" rel="alternate" href="http://example.com/tooter2/3"/>
+    <published>2014-10-24T02:20:00Z</published>
+    <title>Tooter 2 Test Toot 3</title>
+    <content type="html">This is Tootr 2 summary #3</content>
+  </entry>
+
+</feed>

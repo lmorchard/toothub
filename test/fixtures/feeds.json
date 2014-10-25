@@ -1,5 +1,148 @@
-[
-  { "url": "http://127.0.0.1:5050/tooter1/index.html" },
-  { "url": "http://127.0.0.1:5050/tooter2/index.html" },
-  { "url": "http://127.0.0.1:5050/tooter3/index.html" }
-]
+{
+  "urls": [
+    { "url": "http://127.0.0.1:5050/tooter1/index.html" },
+    { "url": "http://127.0.0.1:5050/tooter2/index.atom" },
+    { "url": "http://127.0.0.1:5050/tooter3/index.rss" }
+  ],
+  "expected": {
+    "feeds": {
+      "32e135d7c166d42f48de214eb89b2ae4": {
+        "url": "http://127.0.0.1:5050/tooter1/index.html",
+        "name": null,
+        "author": null,
+        "disabled": false,
+        "statusCode": 200,
+        "headers": {
+          "x-powered-by": "Express",
+          "accept-ranges": "bytes",
+          "date": "Sat, 25 Oct 2014 02:19:24 GMT",
+          "cache-control": "public, max-age=0",
+          "last-modified": "Sat, 25 Oct 2014 01:50:09 GMT",
+          "etag": "W/\"617-897770672\"",
+          "content-type": "text/html; charset=UTF-8",
+          "content-length": "1559",
+          "connection": "keep-alive"
+        },
+        "lastError": "",
+        "encoding": "utf8",
+        "maxAge": 3600000,
+        "timeout": 10000,
+        "lastDuration": 12,
+        "lastValidated": 1414203564835
+      },
+      "941a37da0a0566316cb936d6bb30c0e0": {
+        "url": "http://127.0.0.1:5050/tooter2/index.atom",
+        "name": null,
+        "author": null,
+        "disabled": false,
+        "statusCode": 200,
+        "headers": {
+          "x-powered-by": "Express",
+          "accept-ranges": "bytes",
+          "date": "Sat, 25 Oct 2014 02:19:24 GMT",
+          "cache-control": "public, max-age=0",
+          "last-modified": "Sat, 25 Oct 2014 01:50:29 GMT",
+          "etag": "W/\"48f-2719872409\"",
+          "content-type": "application/atom+xml",
+          "content-length": "1167",
+          "connection": "keep-alive"
+        },
+        "lastError": "",
+        "encoding": "utf8",
+        "maxAge": 3600000,
+        "timeout": 10000,
+        "lastDuration": 42,
+        "lastValidated": 1414203564836
+      },
+      "231498f6b588b311b6985da779a930a3": {
+        "url": "http://127.0.0.1:5050/tooter3/index.rss",
+        "name": null,
+        "author": null,
+        "disabled": false,
+        "statusCode": 200,
+        "headers": {
+          "x-powered-by": "Express",
+          "accept-ranges": "bytes",
+          "date": "Sat, 25 Oct 2014 02:19:24 GMT",
+          "cache-control": "public, max-age=0",
+          "last-modified": "Sat, 25 Oct 2014 01:50:44 GMT",
+          "etag": "W/\"469-2102645629\"",
+          "content-type": "application/rss+xml",
+          "content-length": "1129",
+          "connection": "keep-alive"
+        },
+        "lastError": "",
+        "encoding": "utf8",
+        "maxAge": 3600000,
+        "timeout": 10000,
+        "lastDuration": 78,
+        "lastValidated": 1414203564836
+      }
+    },
+    "toots": {
+      "6a21018e6735976d047b388476d5dba1": {
+        "feedId": "32e135d7c166d42f48de214eb89b2ae4",
+        "url": "http://example.com/tooter1/1",
+        "published": "2014-10-24T01:10:00.000Z",
+        "author": "John Doe",
+        "content": "This is Tooter 1 content #1"
+      },
+      "af8619591042dfdde11d46d71d92f4c6": {
+        "feedId": "32e135d7c166d42f48de214eb89b2ae4",
+        "url": "http://example.com/tooter1/2",
+        "published": "2014-10-24T01:41:00.000Z",
+        "author": "John Doe",
+        "content": "This is Tooter 1 content #2"
+      },
+      "9d0de358fb8f781804210f99b98bbbb2": {
+        "feedId": "32e135d7c166d42f48de214eb89b2ae4",
+        "url": "http://example.com/tooter1/3",
+        "published": "2014-10-24T02:12:00.000Z",
+        "author": "John Doe",
+        "content": "This is Tooter 1 content #3"
+      },
+      "ff8241025b3f964e345c99600f450148": {
+        "feedId": "941a37da0a0566316cb936d6bb30c0e0",
+        "url": "http://example.com/tooter2/1",
+        "published": "2014-10-24T01:20:00.000Z",
+        "author": "Tooter 2",
+        "content": "This is Tootr 2 summary #1"
+      },
+      "f45a8800c413d988255b452574889b23": {
+        "feedId": "941a37da0a0566316cb936d6bb30c0e0",
+        "url": "http://example.com/tooter2/2",
+        "published": "2014-10-24T01:50:00.000Z",
+        "author": "Tooter 2",
+        "content": "This is Tootr 2 summary #2"
+      },
+      "2e629cc1f96ec00554a5a2badab0c017": {
+        "feedId": "941a37da0a0566316cb936d6bb30c0e0",
+        "url": "http://example.com/tooter2/3",
+        "published": "2014-10-24T02:20:00.000Z",
+        "author": "Tooter 2",
+        "content": "This is Tootr 2 summary #3"
+      },
+      "5fde338a78ffdc576d81bef7fb444cc5": {
+        "feedId": "231498f6b588b311b6985da779a930a3",
+        "url": "http://example.com/tooter3/1",
+        "published": "2014-10-24T01:30:00.000Z",
+        "author": null,
+        "content": "This Tooter 3 is summary #1"
+      },
+      "3ca9ed53006db0097c359e18fef63d6e": {
+        "feedId": "231498f6b588b311b6985da779a930a3",
+        "url": "http://example.com/tooter3/2",
+        "published": "2014-10-24T02:01:00.000Z",
+        "author": null,
+        "content": "This Tooter 3 is summary #2"
+      },
+      "0cc3de31a71ffc047bd4566c25080f52": {
+        "feedId": "231498f6b588b311b6985da779a930a3",
+        "url": "http://example.com/tooter3/3",
+        "published": "2014-10-24T02:32:00.000Z",
+        "author": null,
+        "content": "This Tooter 3 is summary #3"
+      }
+    }
+  }
+}
