@@ -1,13 +1,13 @@
 # toothub
 
-[![Build Status via Travis CI](https://travis-ci.org/lmorchard/toothub.svg?branch=master)](https://travis-ci.org/lmorchard/toothub)
+A hub for many tooters
+
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/lmorchard/toothub?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status via Travis CI](https://travis-ci.org/lmorchard/toothub.svg?branch=master)](https://travis-ci.org/lmorchard/toothub)
 [![Coverage](https://coveralls.io/repos/lmorchard/toothub/badge.png)](https://coveralls.io/r/lmorchard/toothub)
 [![Quality](https://codeclimate.com/github/lmorchard/toothub.png)](https://codeclimate.com/github/lmorchard/toothub)
 [![Dependencies](https://david-dm.org/lmorchard/toothub.png)](https://david-dm.org/lmorchard/toothub)
 [![Tips](http://img.shields.io/gittip/lmorchard.png)](https://www.gittip.com/lmorchard/)
-
-A hub for many tooters
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
