@@ -7,6 +7,7 @@ A hub for many tooters
 [![Coverage](https://coveralls.io/repos/lmorchard/toothub/badge.png)](https://coveralls.io/r/lmorchard/toothub)
 [![Quality](https://codeclimate.com/github/lmorchard/toothub.png)](https://codeclimate.com/github/lmorchard/toothub)
 [![Dependencies](https://david-dm.org/lmorchard/toothub.png)](https://david-dm.org/lmorchard/toothub)
+[![devDependency Status](https://david-dm.org/lmorchard/toothub/dev-status.svg)](https://david-dm.org/lmorchard/toothub#info=devDependencies)
 [![Tips](http://img.shields.io/gittip/lmorchard.png)](https://www.gittip.com/lmorchard/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
