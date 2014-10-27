@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <section id="entries">
+    {% for toot in toots %}
+      <section class="h-entry" id="{{ toot._id }}">
+
+        <header>
+          <span class="h-card">
+            <a class="u-url" href="{{ toot.feed.author.url }}">
+              <img class="u-photo" src="{{ toot.feed.author.avatar }}" width="48" height="48">
+              <span class="p-name">{{ toot.feed.author.name }}</span>
+              <span class="p-nickname">{{ toot.feed.author.nickname }}</span>
+            </a>
+          </span>
+          <a class="u-url" href="{{ permalink }}">
+            <time class="dt-published timeago" datetime="{{ toot.published }}">{{ toot.published }}</time>
+          </a>
+        </header>
+
+        <p class="e-content">{{ toot.content }}</p>
+
+      </section>
+    {% endfor %}
+  </section>
+{% endblock %}

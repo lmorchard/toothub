@@ -2,7 +2,7 @@
   "name": "toothub",
   "version": "0.0.1",
   "description": "A hub for toots",
-  "main": "index.js",
+  "main": "lib/index.js",
   "engines": {
     "node": "0.10.x"
   },
@@ -33,12 +33,16 @@
     "feedparser": "~0.19.2",
     "cheerio": "~0.17.0",
     "request": "~2.46.0",
-    "microformat-node": "~0.2.14"
+    "microformat-node": "~0.2.14",
+    "nunjucks": "~1.1.0",
+    "body-parser": "~1.9.1",
+    "pubsub-js": "~1.5.0"
   },
   "devDependencies": {
     "chai": "~1.9.2",
     "mocha": "~2.0.0",
     "jshint": "~2.5.6",
-    "supervisor": "~0.6.0"
+    "supervisor": "~0.6.0",
+    "hippie": "~0.3.0"
   }
 }
