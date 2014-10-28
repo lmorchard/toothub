@@ -36,7 +36,8 @@
     "microformat-node": "~0.2.14",
     "nunjucks": "~1.1.0",
     "body-parser": "~1.9.1",
-    "pubsub-js": "~1.5.0"
+    "pubsub-js": "~1.5.0",
+    "cors": "~2.5.0"
   },
   "devDependencies": {
     "chai": "~1.9.2",

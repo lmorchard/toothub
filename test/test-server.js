@@ -16,15 +16,6 @@ describe('server', function () {
 
   describe('ui', function () {
 
-    it('should be working', function (done) {
-      request({
-        method: 'GET',
-        url: 'http://127.0.0.1:6060/'
-      }, function (err, resp, body) {
-        done();
-      });
-    });
-
   });
 
   describe('api', function () {
