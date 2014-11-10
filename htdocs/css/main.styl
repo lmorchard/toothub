@@ -1,65 +1,88 @@
 body {
-  padding: 0;
-  margin: 0;
+  > nav .navbar-header .navbar-brand {
+    padding-left: 54px;
+    background: url("../img/toothub-white-32.png") transparent no-repeat 14px 6px;
+  }
+  > .container {
+    margin-top: 55px;
+  }
 }
 
-html, body {
-    height: 100%;
+.nav-tabs a { outline: 0; }
+.navbar-nav.navbar-right:last-child { margin-right: 0; }
+@media screen and (max-width: 970px) {
+  .session .show-username { display: none; }
+}
+@media screen and (max-width: 750px) {
+  .session .avatar { display: none; }
 }
 
-body {
-  background-color: #fefefe;
-  color: #010101;
-  font: 15px/1.85em sans-serif;
-}
-body {
-  background: #ddd;
-  margin: 0; padding: 0;
-  font-family: sans-serif;
-}
-body > section#wrapper {
-  background: #fff;
-  width: 900px;
+#sidebar #about {
+  font-size: 0.85em;
+  background: #efefef;
+  border: 1px solid #ccc;
+  margin: 1em 0 1em 0;
   padding: 1em;
-  margin: 0 auto;
-}
-section#entries {
-  margin: 1em 0;
-  section.h-entry {
-    position: relative;
-    margin: 0.5em 0;
-    padding: 1em 0.5em 0.25em 58px;
-    min-height: 48px;
-    background: #fff;
-    border-top: 1px solid #ddd;
-    a.u-url {
-      text-decoration: none;
-    }
-    img.u-photo {
-      position: absolute;
-      border-radius: 6px;
-      top: 1em;
-      left: 0.25em;
-      width: 48px;
-      height: 48px;
-    }
-    header {
-      font-size: 0.75em;
+  h2 {
+    margin: 0;
+  }
+  dl.h-card {
+    display: none;
+    margin: 0;
+    dt {
       margin: 0 0 0.25em 0;
-      padding: 0;
+      font-weight: bold;
+    }
+    dd {
+      margin: 0 0 0.5em 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    dd.p-note {
+      white-space: inherit;
+      overflow: inherit;
+      text-overflow: inherit;
+    }
+  }
+  dl.h-card.ready {
+    display: block;
+  }
+}
+
+.h-entry {
+  position: relative;
+  margin: 0.5em 0;
+  padding: 1em 0.5em 0.25em 64px;
+  min-height: 48px;
+  background: #fff;
+  a.u-url {
+    text-decoration: none;
+  }
+  img.u-photo {
+    position: absolute;
+    border-radius: 6px;
+    top: 1em;
+    left: 0.25em;
+    width: 48px;
+    height: 48px;
+  }
+  header {
+    font-size: 0.85em;
+    margin: 0 0 0.25em 0;
+    padding: 0;
+    a.u-url:before {
+      content: "\2219";
+    }
+    .h-card {
       a.u-url:before {
-        content: "\2219";
+        content: "";
       }
-      .h-card {
-        a.u-url:before {
-          content: "";
-        }
-        .p-name { font-weight: bold; }
-        .p-nickname { color: #999; }
-      }
+      .p-name { font-weight: bold; }
+      .p-nickname { color: #999; }
     }
-    p.e-content {
-      margin: 0.5em 0 0.5em 0;
-    }
+  }
+  p.e-content {
+    margin: 0.5em 0 0.5em 0;
   }
 }

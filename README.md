@@ -44,9 +44,9 @@ toots of other people for shy owners.
 
 ## No seriously what?
 
-This is (or will be) an experiment in semi-distributed microblogging using mostly boring
-old formats and microformats on the web. In other words, it's like a Twitter
-that's not all in one place.
+This is (or will be) an experiment in semi-distributed microblogging using
+mostly boring old formats and microformats on the web. In other words, it's
+like a Twitter that's not all in one place.
 
 It should be easy to publish little thoughts in a space that's yours. It
 should be not much harder to set up a place where lots of people's thoughts

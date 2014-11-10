@@ -3,3 +3,4 @@ node_modules
 *.sw[po]
 xfers
 config.json
+*.pem
