@@ -4,7 +4,7 @@
   <section id="entries">
     {% for toot in toots %}
       <section class="h-entry" id="{{ toot._id }}">
-
+        <pre>{{ toot | json }}</pre>
         <header>
           <span class="h-card">
             <a class="u-url" href="{{ toot.feed.author.url }}">
