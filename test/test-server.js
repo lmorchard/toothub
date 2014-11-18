@@ -12,6 +12,22 @@ var models = require(__dirname + '/../lib/models');
 var testUtils = require('../lib/test-utils');
 var feeds_json = require(__dirname + '/fixtures/feeds.json');
 
+var appServer;
+
+before(function (done) {
+  async.each(feeds_json.urls, function (data, next) {
+    (new models.Feed(data)).save(next);
+  }, function (err) {
+    models.Feed.pollAll({}, function (err, feed) {
+      // no-op
+    }, done);
+  });
+});
+
+after(function (done) {
+  return done();
+});
+
 describe('server', function () {
 
   describe('ui', function () {
@@ -21,7 +37,7 @@ describe('server', function () {
   describe('api', function () {
 
     it('should handle a feed ping', function (done) {
-      var url = 'http://127.0.0.1:5050/tooter4/index.html';
+      var url = 'http://127.0.0.1:5050/fixtures/tooter4/index.html';
       var id = models.Feed.id({ url: url });
 
       var ctBefore = 0;
@@ -32,7 +48,7 @@ describe('server', function () {
 
         expect(ctBefore).to.equal(0);
 
-        hippie().post('http://127.0.0.1:6060/api/ping')
+        hippie().post('http://127.0.0.1:5050/api/ping')
           .form().send({ url: url })
           .expectStatus(204)
           .end(function(err, res, body) {
@@ -61,29 +77,4 @@ describe('server', function () {
 
   });
 
-});
-
-var appServer;
-
-before(function (done) {
-  toothub.initShared({
-    PORT: 6060,
-    verbose: true
-  }, function (err, shared) {
-    async.each(feeds_json.urls, function (data, next) {
-      (new models.Feed(data)).save(next);
-    }, function (err) {
-      models.Feed.pollAll({}, function (err, feed) {
-        // no-op
-      }, function (err) {
-        appServer = require(__dirname + '/../lib/server')(shared);
-        appServer.server.on('listening', done);
-      });
-    });
-  });
-});
-
-after(function (done) {
-  appServer.server.close();
-  return done();
 });
