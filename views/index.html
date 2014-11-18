@@ -4,13 +4,12 @@
   <section id="entries">
     {% for toot in toots %}
       <section class="h-entry" id="{{ toot._id }}">
-        <pre>{{ toot | json }}</pre>
         <header>
           <span class="h-card">
-            <a class="u-url" href="{{ toot.feed.author.url }}">
-              <img class="u-photo" src="{{ toot.feed.author.avatar }}" width="48" height="48">
-              <span class="p-name">{{ toot.feed.author.name }}</span>
-              <span class="p-nickname">{{ toot.feed.author.nickname }}</span>
+            <a class="u-url" href="{{ toot.author.url }}">
+              <img class="u-photo" src="{{ toot.author.photo }}" width="48" height="48">
+              <span class="p-name">{{ toot.author.name }}</span>
+              <span class="p-nickname">{{ toot.author.nickname }}</span>
             </a>
           </span>
           <a class="u-url" href="{{ permalink }}">
