@@ -10,18 +10,11 @@ var toothub = require(__dirname + '/..');
 var models = require(__dirname + '/../lib/models');
 
 var testUtils = require('../lib/test-utils');
-var feeds_json = require(__dirname + '/fixtures/feeds.json');
 
 var appServer;
 
 before(function (done) {
-  async.each(feeds_json.urls, function (data, next) {
-    (new models.Feed(data)).save(next);
-  }, function (err) {
-    models.Feed.pollAll({}, function (err, feed) {
-      // no-op
-    }, done);
-  });
+  done();
 });
 
 after(function (done) {
@@ -37,7 +30,7 @@ describe('server', function () {
   describe('api', function () {
 
     it('should handle a feed ping', function (done) {
-      var url = 'http://127.0.0.1:5050/fixtures/tooter4/index.html';
+      var url = 'http://127.0.0.1:5050/fixtures/tooter1.html';
       var id = models.Feed.id({ url: url });
 
       var ctBefore = 0;
