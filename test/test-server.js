@@ -18,7 +18,19 @@ before(function (done) {
 });
 
 after(function (done) {
-  return done();
+  done();
+});
+
+beforeEach(function (done) {
+  var toots = [];
+  models.Toot.each(function (err, toot, next) {
+    toots.push(toot);
+    next();
+  }, function (err) {
+    async.each(toots, function (toot, next) {
+      toot.destroy(next);
+    }, done);
+  });
 });
 
 describe('server', function () {
@@ -33,35 +45,25 @@ describe('server', function () {
       var url = 'http://127.0.0.1:5050/fixtures/tooter1.html';
       var id = models.Feed.id({ url: url });
 
-      var ctBefore = 0;
-      models.Toot.each(function (err, toot, next) {
-        if (toot.feedId == id) { ctBefore++; }
-        next();
-      }, function (err) {
+      hippie().post('http://127.0.0.1:5050/api/ping')
+        .form().send({ url: url })
+        .expectStatus(204)
+        .end(function(err, res, body) {
+          if (err) throw err;
+        });
 
-        expect(ctBefore).to.equal(0);
+      PubSub.subscribe('ping', function (msg, feed) {
+        expect(feed._id).to.not.be.null;
+        expect(feed.url).to.equal(url);
+        expect(feed.statusCode).to.equal(200);
 
-        hippie().post('http://127.0.0.1:5050/api/ping')
-          .form().send({ url: url })
-          .expectStatus(204)
-          .end(function(err, res, body) {
-            if (err) throw err;
-          });
-
-        PubSub.subscribe('ping', function (msg, feed) {
-          expect(feed._id).to.not.be.null;
-          expect(feed.url).to.equal(url);
-          expect(feed.statusCode).to.equal(200);
-
-          var ctAfter = 0;
-          models.Toot.each(function (err, toot, next) {
-            if (toot.feedId == id) { ctAfter++; }
-            next();
-          }, function (err) {
-            expect(ctAfter).to.equal(3);
-            return done();
-          });
-
+        var ctAfter = 0;
+        models.Toot.each(function (err, toot, next) {
+          if (toot.feedId == id) { ctAfter++; }
+          next();
+        }, function (err) {
+          expect(ctAfter).to.equal(1);
+          return done();
         });
 
       });
